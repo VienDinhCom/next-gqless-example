@@ -19,6 +19,9 @@ export function Layout(props: Props) {
         <Link href="/about">
           <a>About</a>
         </Link>
+        <Link href="/no-ssr">
+          <a>No SSR</a>
+        </Link>
       </nav>
       <main>{props.children}</main>
     </>
