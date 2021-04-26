@@ -7,13 +7,12 @@ interface Props extends PropsWithServerCache {}
 
 export default function Page({ cacheSnapshot }: Props) {
   useHydrateCache({ cacheSnapshot });
-
   const query = useQuery();
 
   return (
     <Layout>
-      <h1>Home</h1>
-      <p>{query.shop.name}</p>
+      <h1>About</h1>
+      <article>{query.shop.primaryDomain.host}</article>
     </Layout>
   );
 }
